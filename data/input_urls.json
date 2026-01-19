@@ -1,0 +1,62 @@
+[
+  {
+    "url": "https://www.amazon.com/dp/B08N5WRWNW",
+    "category": "ecommerce",
+    "priority": 1,
+    "note": "Product page - Reference for Product schema"
+  },
+  {
+    "url": "https://www.foodnetwork.com/recipes/alton-brown/homemade-mac-and-cheese-recipe-1939465",
+    "category": "recipe",
+    "priority": 1,
+    "note": "Recipe - 35% traffic increase with structured data"
+  },
+  {
+    "url": "https://www.theguardian.com/world",
+    "category": "news",
+    "priority": 1,
+    "note": "NewsArticle - Gold standard for author attribution"
+  },
+  {
+    "url": "https://www.eventbrite.com/",
+    "category": "events",
+    "priority": 1,
+    "note": "Event schema - 100% growth documented"
+  },
+  {
+    "url": "https://www.nestle.com/",
+    "category": "organization",
+    "priority": 1,
+    "note": "Organization - 82% higher CTR with structured data"
+  },
+  {
+    "url": "https://www.stylecraze.com/",
+    "category": "howto",
+    "priority": 1,
+    "note": "HowTo - 20% CTR improvement"
+  },
+  {
+    "url": "https://www.gov.uk/",
+    "category": "government",
+    "priority": 1,
+    "note": "Government - Well-documented schema implementation"
+  },
+  {
+    "url": "https://www.theverge.com/",
+    "category": "news",
+    "priority": 1,
+    "note": "Article - Clean NewsArticle implementation"
+  },
+  {
+    "url": "https://brainly.com/",
+    "category": "education",
+    "priority": 2,
+    "note": "QAPage - Early adopter"
+  },
+  {
+    "url": "https://www.jobrapido.com/",
+    "category": "jobs",
+    "priority": 2,
+    "note": "JobPosting - 15% bounce rate reduction"
+  }
+]

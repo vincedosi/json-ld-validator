@@ -1,0 +1,1556 @@
+{
+  "meta": {
+    "version": "1.0",
+    "updated": "2024-01-16",
+    "total_domains": 240,
+    "target_urls": "3000-4000",
+    "expected_accepted": "1500-2000",
+    "language_ratio": {
+      "english": "60%",
+      "french": "40%"
+    },
+    "quality_tiers": {
+      "gold": "20 domains - 100 URLs max each - 85%+ acceptance rate",
+      "high": "40 domains - 50 URLs max each - 65%+ acceptance rate",
+      "standard": "180 domains - 30 URLs max each - variable acceptance"
+    },
+    "priority_schema_types": [
+      "FAQPage",
+      "HowTo", 
+      "Article",
+      "NewsArticle",
+      "Product",
+      "Recipe",
+      "Organization",
+      "QAPage"
+    ]
+  },
+
+  "categories": {
+    
+    "Sante_Pharmacie_Medical": {
+      "priority": 1,
+      "expected_schema_types": ["MedicalWebPage", "Article", "FAQPage", "Organization", "MedicalCondition"],
+      "discovery_config": {
+        "max_urls_per_gold": 100,
+        "max_urls_per_high": 50,
+        "max_urls_per_standard": 30,
+        "priority_patterns": [
+          "/faq", "/diseases", "/conditions", "/symptoms", "/health",
+          "/treatments", "/medications", "/sante", "/maladies"
+        ],
+        "use_sitemap": true,
+        "sitemap_filters": ["health", "medical", "disease", "condition"]
+      },
+      "domains": [
+        {
+          "url": "https://www.mayoclinic.org",
+          "tier": "gold",
+          "language": "en",
+          "notes": "⭐ GOLD - Medical authority, excellent schema implementation"
+        },
+        {
+          "url": "https://www.nhs.uk",
+          "tier": "gold",
+          "language": "en",
+          "notes": "⭐ GOLD - UK government health, structured data reference"
+        },
+        {
+          "url": "https://www.clevelandclinic.org",
+          "tier": "high",
+          "language": "en",
+          "notes": "Major medical institution, comprehensive health info"
+        },
+        {
+          "url": "https://www.cdc.gov",
+          "tier": "high",
+          "language": "en",
+          "notes": "US government health authority"
+        },
+        {
+          "url": "https://www.who.int",
+          "tier": "high",
+          "language": "en",
+          "notes": "World Health Organization"
+        },
+        {
+          "url": "https://www.webmd.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Popular health information site"
+        },
+        {
+          "url": "https://www.healthline.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Health information and medical news"
+        },
+        {
+          "url": "https://www.hopkinsmedicine.org",
+          "tier": "high",
+          "language": "en",
+          "notes": "Johns Hopkins medical expertise"
+        },
+        {
+          "url": "https://www.nih.gov",
+          "tier": "high",
+          "language": "en",
+          "notes": "National Institutes of Health"
+        },
+        {
+          "url": "https://www.medlineplus.gov",
+          "tier": "high",
+          "language": "en",
+          "notes": "Trusted health information"
+        },
+        {
+          "url": "https://www.drugs.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Drug information database"
+        },
+        {
+          "url": "https://www.patient.info",
+          "tier": "high",
+          "language": "en",
+          "notes": "UK patient information"
+        },
+        {
+          "url": "https://www.medicalnewstoday.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Medical news and research"
+        },
+        {
+          "url": "https://www.vidal.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French medication reference"
+        },
+        {
+          "url": "https://www.doctissimo.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French health portal"
+        },
+        {
+          "url": "https://www.ameli.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French health insurance portal"
+        },
+        {
+          "url": "https://www.pasteur.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "Institut Pasteur research"
+        },
+        {
+          "url": "https://www.inserm.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French medical research institute"
+        },
+        {
+          "url": "https://www.has-sante.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French health authority"
+        }
+      ]
+    },
+
+    "Gouvernement_Public_Data": {
+      "priority": 1,
+      "expected_schema_types": ["GovernmentOrganization", "Dataset", "FAQPage", "GovernmentService"],
+      "discovery_config": {
+        "max_urls_per_gold": 100,
+        "max_urls_per_high": 50,
+        "max_urls_per_standard": 40,
+        "priority_patterns": [
+          "/services", "/faq", "/data", "/aide", "/help",
+          "/search", "/info", "/statistics"
+        ],
+        "use_sitemap": true,
+        "sitemap_filters": ["service", "data", "stats"]
+      },
+      "domains": [
+        {
+          "url": "https://www.gov.uk",
+          "tier": "gold",
+          "language": "en",
+          "notes": "⭐ GOLD STANDARD - Public schema documentation, exemplary implementation"
+        },
+        {
+          "url": "https://www.usa.gov",
+          "tier": "high",
+          "language": "en",
+          "notes": "US government portal"
+        },
+        {
+          "url": "https://www.canada.ca",
+          "tier": "high",
+          "language": "en",
+          "notes": "Canadian government services"
+        },
+        {
+          "url": "https://www.australia.gov.au",
+          "tier": "high",
+          "language": "en",
+          "notes": "Australian government portal"
+        },
+        {
+          "url": "https://www.europa.eu",
+          "tier": "high",
+          "language": "en",
+          "notes": "European Union portal"
+        },
+        {
+          "url": "https://www.un.org",
+          "tier": "high",
+          "language": "en",
+          "notes": "United Nations"
+        },
+        {
+          "url": "https://www.service-public.fr",
+          "tier": "high",
+          "language": "fr",
+          "notes": "French public services portal"
+        },
+        {
+          "url": "https://www.gouvernement.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French government"
+        },
+        {
+          "url": "https://www.data.gouv.fr",
+          "tier": "high",
+          "language": "fr",
+          "notes": "French open data platform"
+        },
+        {
+          "url": "https://www.sante.gouv.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French health ministry"
+        },
+        {
+          "url": "https://www.vie-publique.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French public life information"
+        },
+        {
+          "url": "https://www.caf.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French family allowances"
+        }
+      ]
+    },
+
+    "Education_Recherche_Academic": {
+      "priority": 1,
+      "expected_schema_types": ["Course", "EducationalOrganization", "Article", "QAPage", "HowTo", "ScholarlyArticle"],
+      "discovery_config": {
+        "max_urls_per_gold": 100,
+        "max_urls_per_high": 50,
+        "max_urls_per_standard": 30,
+        "priority_patterns": [
+          "/faq", "/help", "/qa", "/questions", "/courses",
+          "/learn", "/tutorials", "/guide", "/research"
+        ],
+        "use_sitemap": true,
+        "sitemap_filters": ["course", "learn", "education", "research"]
+      },
+      "domains": [
+        {
+          "url": "https://www.harvard.edu",
+          "tier": "gold",
+          "language": "en",
+          "notes": "⭐ GOLD - Top university, excellent structured data"
+        },
+        {
+          "url": "https://stackoverflow.com",
+          "tier": "gold",
+          "language": "en",
+          "notes": "⭐ GOLD - QAPage perfection, tech Q&A reference"
+        },
+        {
+          "url": "https://brainly.com",
+          "tier": "gold",
+          "language": "en",
+          "notes": "⭐ GOLD STANDARD - QAPage early adopter, educational Q&A"
+        },
+        {
+          "url": "https://www.stylecraze.com",
+          "tier": "gold",
+          "language": "en",
+          "notes": "⭐ GOLD STANDARD - HowTo schema, +20% CTR documented"
+        },
+        {
+          "url": "https://www.mit.edu",
+          "tier": "high",
+          "language": "en",
+          "notes": "MIT - premier technical institute"
+        },
+        {
+          "url": "https://www.stanford.edu",
+          "tier": "high",
+          "language": "en",
+          "notes": "Stanford University"
+        },
+        {
+          "url": "https://www.ox.ac.uk",
+          "tier": "high",
+          "language": "en",
+          "notes": "Oxford University"
+        },
+        {
+          "url": "https://www.khanacademy.org",
+          "tier": "high",
+          "language": "en",
+          "notes": "Free education platform"
+        },
+        {
+          "url": "https://www.coursera.org",
+          "tier": "high",
+          "language": "en",
+          "notes": "Online courses platform"
+        },
+        {
+          "url": "https://www.udemy.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Online learning marketplace"
+        },
+        {
+          "url": "https://www.edx.org",
+          "tier": "high",
+          "language": "en",
+          "notes": "University online courses"
+        },
+        {
+          "url": "https://www.freecodecamp.org",
+          "tier": "high",
+          "language": "en",
+          "notes": "Coding education, tutorials"
+        },
+        {
+          "url": "https://www.w3schools.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Web development tutorials"
+        },
+        {
+          "url": "https://www.nature.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Scientific journal"
+        },
+        {
+          "url": "https://www.science.org",
+          "tier": "high",
+          "language": "en",
+          "notes": "Science journal"
+        },
+        {
+          "url": "https://www.thelancet.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Medical journal"
+        },
+        {
+          "url": "https://www.nejm.org",
+          "tier": "high",
+          "language": "en",
+          "notes": "New England Journal of Medicine"
+        },
+        {
+          "url": "https://www.cned.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French distance learning"
+        },
+        {
+          "url": "https://openclassrooms.com",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French online courses"
+        },
+        {
+          "url": "https://www.sorbonne-universite.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "Sorbonne University"
+        },
+        {
+          "url": "https://www.enseignementsup-recherche.gouv.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French higher education ministry"
+        }
+      ]
+    },
+
+    "Ecommerce_Retail_Global": {
+      "priority": 1,
+      "expected_schema_types": ["Product", "Offer", "AggregateRating", "Review", "Brand", "Organization"],
+      "discovery_config": {
+        "max_urls_per_gold": 100,
+        "max_urls_per_high": 50,
+        "max_urls_per_standard": 30,
+        "priority_patterns": [
+          "/product", "/produit", "/dp/", "/p/", "/item/",
+          "/shop", "/boutique", "/store"
+        ],
+        "use_sitemap": true,
+        "sitemap_filters": ["product", "catalog", "shop"]
+      },
+      "domains": [
+        {
+          "url": "https://www.amazon.com",
+          "tier": "gold",
+          "language": "en",
+          "notes": "⭐ GOLD STANDARD - Product schema absolute reference"
+        },
+        {
+          "url": "https://www.walmart.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Major retailer, comprehensive product data"
+        },
+        {
+          "url": "https://www.target.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Major US retailer"
+        },
+        {
+          "url": "https://www.ebay.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Marketplace with extensive product schema"
+        },
+        {
+          "url": "https://www.etsy.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Handmade & vintage marketplace"
+        },
+        {
+          "url": "https://www.bestbuy.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Electronics retailer"
+        },
+        {
+          "url": "https://www.homedepot.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Home improvement retailer"
+        },
+        {
+          "url": "https://www.lowes.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Home improvement chain"
+        },
+        {
+          "url": "https://www.costco.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Warehouse retailer"
+        },
+        {
+          "url": "https://www.wayfair.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Furniture and home goods"
+        },
+        {
+          "url": "https://www.newegg.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Tech and electronics"
+        },
+        {
+          "url": "https://www.rei.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Outdoor gear and apparel"
+        },
+        {
+          "url": "https://www.nordstrom.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Fashion retailer"
+        },
+        {
+          "url": "https://www.fnac.com",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French retail chain"
+        },
+        {
+          "url": "https://www.darty.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French electronics retailer"
+        },
+        {
+          "url": "https://www.cdiscount.com",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French e-commerce"
+        },
+        {
+          "url": "https://www.decathlon.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "Sports equipment retailer"
+        },
+        {
+          "url": "https://www.leroymerlin.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "DIY and home improvement"
+        },
+        {
+          "url": "https://www.carrefour.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French supermarket chain"
+        }
+      ]
+    },
+
+    "Luxe_Premium_Brands": {
+      "priority": 2,
+      "expected_schema_types": ["Product", "Brand", "Organization"],
+      "discovery_config": {
+        "max_urls_per_gold": 100,
+        "max_urls_per_high": 50,
+        "max_urls_per_standard": 30,
+        "priority_patterns": [
+          "/products", "/collections", "/boutique", "/shop",
+          "/stores", "/about"
+        ],
+        "use_sitemap": true
+      },
+      "domains": [
+        {
+          "url": "https://www.nestle.com",
+          "tier": "gold",
+          "language": "en",
+          "notes": "⭐ GOLD STANDARD - Brand/Organization hierarchy, +82% CTR documented"
+        },
+        {
+          "url": "https://www.louisvuitton.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Luxury fashion house"
+        },
+        {
+          "url": "https://www.chanel.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Luxury brand"
+        },
+        {
+          "url": "https://www.hermes.com",
+          "tier": "high",
+          "language": "fr",
+          "notes": "French luxury brand"
+        },
+        {
+          "url": "https://www.dior.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Luxury fashion"
+        },
+        {
+          "url": "https://www.cartier.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Luxury jewelry"
+        },
+        {
+          "url": "https://www.rolex.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Luxury watches"
+        },
+        {
+          "url": "https://www.gucci.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Luxury fashion brand"
+        },
+        {
+          "url": "https://www.prada.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Italian luxury brand"
+        }
+      ]
+    },
+
+    "RH_Emploi_Jobs": {
+      "priority": 2,
+      "expected_schema_types": ["JobPosting", "Organization", "HiringOrganization"],
+      "discovery_config": {
+        "max_urls_per_gold": 100,
+        "max_urls_per_high": 50,
+        "max_urls_per_standard": 30,
+        "priority_patterns": [
+          "/jobs", "/job/", "/emploi", "/careers", "/offre",
+          "/positions", "/opportunities"
+        ],
+        "use_sitemap": true,
+        "sitemap_filters": ["job", "career", "emploi"]
+      },
+      "domains": [
+        {
+          "url": "https://www.jobrapido.com",
+          "tier": "gold",
+          "language": "en",
+          "notes": "⭐ GOLD STANDARD - JobPosting schema, -15% bounce rate documented"
+        },
+        {
+          "url": "https://www.linkedin.com",
+          "tier": "gold",
+          "language": "en",
+          "notes": "⭐ GOLD - Person/Organization schema reference, professional network"
+        },
+        {
+          "url": "https://www.indeed.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Major job search platform"
+        },
+        {
+          "url": "https://www.glassdoor.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Jobs and company reviews"
+        },
+        {
+          "url": "https://www.monster.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Job search site"
+        },
+        {
+          "url": "https://www.ziprecruiter.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Job distribution platform"
+        },
+        {
+          "url": "https://www.welcometothejungle.com",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "Modern recruitment platform"
+        },
+        {
+          "url": "https://www.hellowork.com",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French job board"
+        },
+        {
+          "url": "https://www.apec.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French executive jobs"
+        },
+        {
+          "url": "https://www.francetravail.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French employment agency"
+        }
+      ]
+    },
+
+    "Finance_Banking_Insurance": {
+      "priority": 2,
+      "expected_schema_types": ["FinancialService", "Organization", "FAQPage", "Service"],
+      "discovery_config": {
+        "max_urls_per_gold": 50,
+        "max_urls_per_high": 40,
+        "max_urls_per_standard": 30,
+        "priority_patterns": [
+          "/faq", "/help", "/services", "/products",
+          "/about", "/aide"
+        ],
+        "use_sitemap": true
+      },
+      "domains": [
+        {
+          "url": "https://www.chase.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Major US bank"
+        },
+        {
+          "url": "https://www.bankofamerica.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Major US bank"
+        },
+        {
+          "url": "https://www.hsbc.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "International banking"
+        },
+        {
+          "url": "https://www.axa.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Insurance group"
+        },
+        {
+          "url": "https://www.allianz.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Insurance and asset management"
+        },
+        {
+          "url": "https://www.boursorama.com",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French online bank"
+        },
+        {
+          "url": "https://mabanque.bnpparibas",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "BNP Paribas banking"
+        },
+        {
+          "url": "https://www.maif.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French insurance"
+        }
+      ]
+    },
+
+    "Media_News_Authority": {
+      "priority": 1,
+      "expected_schema_types": ["NewsArticle", "Article", "Person", "Organization", "VideoObject"],
+      "discovery_config": {
+        "max_urls_per_gold": 100,
+        "max_urls_per_high": 50,
+        "max_urls_per_standard": 30,
+        "priority_patterns": [
+          "/article", "/news", "/world", "/opinion", "/analysis",
+          "/tech", "/business", "/actualites"
+        ],
+        "use_sitemap": true,
+        "sitemap_filters": ["article", "news", "post"]
+      },
+      "domains": [
+        {
+          "url": "https://www.theguardian.com",
+          "tier": "gold",
+          "language": "en",
+          "notes": "⭐ GOLD STANDARD - NewsArticle author attribution reference"
+        },
+        {
+          "url": "https://www.theverge.com",
+          "tier": "gold",
+          "language": "en",
+          "notes": "⭐ GOLD STANDARD - Clean Article implementation, tech news"
+        },
+        {
+          "url": "https://www.nytimes.com",
+          "tier": "gold",
+          "language": "en",
+          "notes": "⭐ GOLD - Premier news source, excellent schema"
+        },
+        {
+          "url": "https://www.bbc.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "British public broadcaster"
+        },
+        {
+          "url": "https://www.cnn.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Cable news network"
+        },
+        {
+          "url": "https://www.reuters.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "International news agency"
+        },
+        {
+          "url": "https://www.washingtonpost.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Major US newspaper"
+        },
+        {
+          "url": "https://www.wsj.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Wall Street Journal"
+        },
+        {
+          "url": "https://www.forbes.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Business news and lists"
+        },
+        {
+          "url": "https://www.techcrunch.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Technology news"
+        },
+        {
+          "url": "https://www.wired.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Technology and culture"
+        },
+        {
+          "url": "https://arstechnica.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Technology news and analysis"
+        },
+        {
+          "url": "https://www.lemonde.fr",
+          "tier": "high",
+          "language": "fr",
+          "notes": "Major French newspaper"
+        },
+        {
+          "url": "https://www.lefigaro.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French daily newspaper"
+        },
+        {
+          "url": "https://www.lesechos.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French business newspaper"
+        }
+      ]
+    },
+
+    "Tourisme_Travel_Hospitality": {
+      "priority": 2,
+      "expected_schema_types": ["Hotel", "TouristAttraction", "Event", "Place", "LodgingBusiness", "Review"],
+      "discovery_config": {
+        "max_urls_per_gold": 100,
+        "max_urls_per_high": 50,
+        "max_urls_per_standard": 30,
+        "priority_patterns": [
+          "/hotel", "/attraction", "/restaurant", "/destination",
+          "/things-to-do", "/voir", "/visiter"
+        ],
+        "use_sitemap": true,
+        "sitemap_filters": ["hotel", "attraction", "destination"]
+      },
+      "domains": [
+        {
+          "url": "https://www.booking.com",
+          "tier": "gold",
+          "language": "en",
+          "notes": "⭐ GOLD - Hotel/Place schema reference"
+        },
+        {
+          "url": "https://www.tripadvisor.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Reviews and travel advice"
+        },
+        {
+          "url": "https://www.airbnb.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Accommodation platform"
+        },
+        {
+          "url": "https://www.expedia.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Travel booking platform"
+        },
+        {
+          "url": "https://www.hotels.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Hotel booking"
+        },
+        {
+          "url": "https://www.kayak.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Travel search engine"
+        },
+        {
+          "url": "https://www.lonelyplanet.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Travel guides"
+        },
+        {
+          "url": "https://www.accor.com",
+          "tier": "standard",
+          "language": "en",
+          "notes": "Hotel group"
+        },
+        {
+          "url": "https://www.sncf-connect.com",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French rail travel"
+        },
+        {
+          "url": "https://www.clubmed.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "Resort vacations"
+        },
+        {
+          "url": "https://www.louvre.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "Louvre Museum"
+        }
+      ]
+    },
+
+    "Immobilier_RealEstate": {
+      "priority": 2,
+      "expected_schema_types": ["RealEstateListing", "Residence", "Place", "Offer"],
+      "discovery_config": {
+        "max_urls_per_gold": 100,
+        "max_urls_per_high": 50,
+        "max_urls_per_standard": 30,
+        "priority_patterns": [
+          "/property", "/for-sale", "/for-rent", "/listing",
+          "/vente", "/location", "/annonce"
+        ],
+        "use_sitemap": true,
+        "sitemap_filters": ["property", "listing"]
+      },
+      "domains": [
+        {
+          "url": "https://www.zillow.com",
+          "tier": "gold",
+          "language": "en",
+          "notes": "⭐ GOLD - Real estate listing schema reference"
+        },
+        {
+          "url": "https://www.realtor.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Major US real estate site"
+        },
+        {
+          "url": "https://www.redfin.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Real estate brokerage"
+        },
+        {
+          "url": "https://www.rightmove.co.uk",
+          "tier": "high",
+          "language": "en",
+          "notes": "UK property portal"
+        },
+        {
+          "url": "https://www.zoopla.co.uk",
+          "tier": "high",
+          "language": "en",
+          "notes": "UK property search"
+        },
+        {
+          "url": "https://www.seloger.com",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French real estate portal"
+        },
+        {
+          "url": "https://www.bienici.com",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French property search"
+        },
+        {
+          "url": "https://www.pap.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French direct owner listings"
+        },
+        {
+          "url": "https://www.century21.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "Real estate agency"
+        },
+        {
+          "url": "https://www.meilleursagents.com",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French real estate valuation"
+        }
+      ]
+    },
+
+    "Automobile_Transport": {
+      "priority": 2,
+      "expected_schema_types": ["Car", "Vehicle", "Product", "Offer", "Review"],
+      "discovery_config": {
+        "max_urls_per_gold": 50,
+        "max_urls_per_high": 40,
+        "max_urls_per_standard": 30,
+        "priority_patterns": [
+          "/vehicles", "/cars", "/models", "/voitures",
+          "/occasions", "/neuf"
+        ],
+        "use_sitemap": true
+      },
+      "domains": [
+        {
+          "url": "https://www.tesla.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Electric vehicles manufacturer"
+        },
+        {
+          "url": "https://www.ford.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Major automaker"
+        },
+        {
+          "url": "https://www.toyota.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Global automaker"
+        },
+        {
+          "url": "https://www.volkswagen.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "German automotive group"
+        },
+        {
+          "url": "https://www.lacentrale.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French used car marketplace"
+        },
+        {
+          "url": "https://www.aramisauto.com",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French used car dealer"
+        },
+        {
+          "url": "https://www.largus.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French automotive news"
+        },
+        {
+          "url": "https://www.peugeot.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French automaker"
+        }
+      ]
+    },
+
+    "Gastronomie_Food_Recipes": {
+      "priority": 1,
+      "expected_schema_types": ["Recipe", "HowTo", "NutritionInformation", "Person", "Organization"],
+      "discovery_config": {
+        "max_urls_per_gold": 100,
+        "max_urls_per_high": 50,
+        "max_urls_per_standard": 30,
+        "priority_patterns": [
+          "/recipe", "/recette", "/recipes", "/recettes",
+          "/how-to-cook", "/cuisine"
+        ],
+        "use_sitemap": true,
+        "sitemap_filters": ["recipe", "recette"]
+      },
+      "domains": [
+        {
+          "url": "https://www.foodnetwork.com",
+          "tier": "gold",
+          "language": "en",
+          "notes": "⭐ GOLD STANDARD - Recipe schema, +35% traffic documented"
+        },
+        {
+          "url": "https://recipe.rakuten.co.jp",
+          "tier": "gold",
+          "language": "en",
+          "notes": "⭐ GOLD STANDARD - Recipe schema, +270% traffic from Google case study"
+        },
+        {
+          "url": "https://www.allrecipes.com",
+          "tier": "gold",
+          "language": "en",
+          "notes": "⭐ GOLD - Recipe schema standard"
+        },
+        {
+          "url": "https://www.seriouseats.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Food science and recipes"
+        },
+        {
+          "url": "https://www.bonappetit.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Food and entertaining"
+        },
+        {
+          "url": "https://www.epicurious.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Recipe database"
+        },
+        {
+          "url": "https://tasty.co",
+          "tier": "high",
+          "language": "en",
+          "notes": "Buzzfeed recipes"
+        },
+        {
+          "url": "https://www.bbcgoodfood.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "BBC recipes"
+        },
+        {
+          "url": "https://www.delish.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Recipe site"
+        },
+        {
+          "url": "https://www.marmiton.org",
+          "tier": "high",
+          "language": "fr",
+          "notes": "Major French recipe site"
+        },
+        {
+          "url": "https://www.cuisineaz.com",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French recipes"
+        },
+        {
+          "url": "https://www.750g.com",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French cooking site"
+        },
+        {
+          "url": "https://cuisine.journaldesfemmes.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French recipe portal"
+        },
+        {
+          "url": "https://www.atelierdeschefs.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French cooking classes"
+        }
+      ]
+    },
+
+    "Energie_Tech_Industry": {
+      "priority": 2,
+      "expected_schema_types": ["Organization", "Product", "Article"],
+      "discovery_config": {
+        "max_urls_per_gold": 50,
+        "max_urls_per_high": 40,
+        "max_urls_per_standard": 30,
+        "priority_patterns": [
+          "/products", "/solutions", "/about", "/news"
+        ],
+        "use_sitemap": true
+      },
+      "domains": [
+        {
+          "url": "https://www.ge.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "General Electric"
+        },
+        {
+          "url": "https://www.siemens.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Global technology company"
+        },
+        {
+          "url": "https://www.tesla.com/energy",
+          "tier": "high",
+          "language": "en",
+          "notes": "Energy solutions"
+        },
+        {
+          "url": "https://www.edf.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French energy company"
+        },
+        {
+          "url": "https://www.engie.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French energy group"
+        },
+        {
+          "url": "https://www.totalenergies.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French energy company"
+        },
+        {
+          "url": "https://www.se.com",
+          "tier": "standard",
+          "language": "en",
+          "notes": "Schneider Electric"
+        },
+        {
+          "url": "https://www.legrand.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "Electrical equipment"
+        }
+      ]
+    },
+
+    "Tech_Community_Help": {
+      "priority": 1,
+      "expected_schema_types": ["QAPage", "Question", "Answer", "HowTo", "Article"],
+      "discovery_config": {
+        "max_urls_per_gold": 100,
+        "max_urls_per_high": 50,
+        "max_urls_per_standard": 30,
+        "priority_patterns": [
+          "/questions", "/q/", "/a/", "/how-to", "/tutorial",
+          "/guide", "/forum", "/community"
+        ],
+        "use_sitemap": true,
+        "sitemap_filters": ["question", "answer", "tutorial"]
+      },
+      "domains": [
+        {
+          "url": "https://quora.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Q&A platform"
+        },
+        {
+          "url": "https://reddit.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Community discussions"
+        },
+        {
+          "url": "https://github.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Developer platform"
+        },
+        {
+          "url": "https://dev.to",
+          "tier": "high",
+          "language": "en",
+          "notes": "Developer community"
+        },
+        {
+          "url": "https://medium.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Publishing platform"
+        },
+        {
+          "url": "https://hackernoon.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Tech stories"
+        },
+        {
+          "url": "https://www.commentcamarche.net",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French tech help"
+        },
+        {
+          "url": "https://www.futura-sciences.com",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French science news"
+        },
+        {
+          "url": "https://www.linternaute.com",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French web portal"
+        },
+        {
+          "url": "https://www.astuces-pratiques.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French tips and tricks"
+        }
+      ]
+    },
+
+    "Culture_Entertainment_Leisure": {
+      "priority": 2,
+      "expected_schema_types": ["Movie", "TVSeries", "MusicGroup", "Event", "Review", "CreativeWork"],
+      "discovery_config": {
+        "max_urls_per_gold": 100,
+        "max_urls_per_high": 50,
+        "max_urls_per_standard": 30,
+        "priority_patterns": [
+          "/title", "/movie", "/tv", "/film", "/music",
+          "/review", "/spectacle"
+        ],
+        "use_sitemap": true,
+        "sitemap_filters": ["movie", "tv", "music", "review"]
+      },
+      "domains": [
+        {
+          "url": "https://www.imdb.com",
+          "tier": "gold",
+          "language": "en",
+          "notes": "⭐ GOLD - Movie/TV schema reference"
+        },
+        {
+          "url": "https://www.rottentomatoes.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Movie and TV reviews"
+        },
+        {
+          "url": "https://www.spotify.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Music streaming"
+        },
+        {
+          "url": "https://www.metacritic.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Reviews aggregator"
+        },
+        {
+          "url": "https://www.allocine.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French cinema portal"
+        },
+        {
+          "url": "https://www.programme-tv.net",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French TV guide"
+        },
+        {
+          "url": "https://www.senscritique.com",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French cultural reviews"
+        },
+        {
+          "url": "https://www.fnacspectacles.com",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French event ticketing"
+        }
+      ]
+    },
+
+    "Events_Conferences": {
+      "priority": 1,
+      "expected_schema_types": ["Event", "Place", "Offer", "Organization"],
+      "discovery_config": {
+        "max_urls_per_gold": 100,
+        "max_urls_per_high": 50,
+        "max_urls_per_standard": 30,
+        "priority_patterns": [
+          "/event", "/events", "/e/", "/conference",
+          "/evenement", "/salon"
+        ],
+        "use_sitemap": true,
+        "sitemap_filters": ["event", "conference"]
+      },
+      "domains": [
+        {
+          "url": "https://www.eventbrite.com",
+          "tier": "gold",
+          "language": "en",
+          "notes": "⭐ GOLD STANDARD - Event schema, +100% growth documented"
+        },
+        {
+          "url": "https://www.meetup.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Community events platform"
+        },
+        {
+          "url": "https://www.ticketmaster.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Event ticketing"
+        },
+        {
+          "url": "https://www.stubhub.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Ticket marketplace"
+        }
+      ]
+    },
+
+    "Sports_Athletics": {
+      "priority": 2,
+      "expected_schema_types": ["SportsEvent", "SportsTeam", "Person", "Organization", "Article"],
+      "discovery_config": {
+        "max_urls_per_gold": 50,
+        "max_urls_per_high": 40,
+        "max_urls_per_standard": 30,
+        "priority_patterns": [
+          "/teams", "/players", "/schedule", "/scores",
+          "/news", "/equipes", "/joueurs"
+        ],
+        "use_sitemap": true,
+        "sitemap_filters": ["sport", "team", "player", "match"]
+      },
+      "domains": [
+        {
+          "url": "https://www.espn.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Major sports network"
+        },
+        {
+          "url": "https://www.nfl.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "National Football League"
+        },
+        {
+          "url": "https://www.nba.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "National Basketball Association"
+        },
+        {
+          "url": "https://www.mlb.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Major League Baseball"
+        },
+        {
+          "url": "https://www.uefa.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "European football"
+        },
+        {
+          "url": "https://www.fifa.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "International football"
+        },
+        {
+          "url": "https://www.lequipe.fr",
+          "tier": "high",
+          "language": "fr",
+          "notes": "French sports news"
+        },
+        {
+          "url": "https://www.eurosport.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "European sports coverage"
+        }
+      ]
+    },
+
+    "DIY_Home_Improvement": {
+      "priority": 1,
+      "expected_schema_types": ["HowTo", "Article", "VideoObject"],
+      "discovery_config": {
+        "max_urls_per_gold": 80,
+        "max_urls_per_high": 50,
+        "max_urls_per_standard": 30,
+        "priority_patterns": [
+          "/how-to", "/diy", "/projects", "/tutorials",
+          "/guide", "/bricolage", "/tutoriel"
+        ],
+        "use_sitemap": true,
+        "sitemap_filters": ["how-to", "diy", "project", "tutorial"]
+      },
+      "domains": [
+        {
+          "url": "https://www.wikihow.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "HowTo article database"
+        },
+        {
+          "url": "https://www.instructables.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "DIY project community"
+        },
+        {
+          "url": "https://www.thisoldhouse.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "Home improvement guides"
+        },
+        {
+          "url": "https://www.familyhandyman.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "DIY and home repair"
+        },
+        {
+          "url": "https://www.diynetwork.com",
+          "tier": "high",
+          "language": "en",
+          "notes": "DIY projects and videos"
+        },
+        {
+          "url": "https://www.systemed.fr",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French DIY magazine"
+        },
+        {
+          "url": "https://www.bricoleurpro.com",
+          "tier": "standard",
+          "language": "fr",
+          "notes": "French DIY advice"
+        }
+      ]
+    }
+  }
+}
